@@ -112,7 +112,6 @@ main {
 
 .attribution {
     height: 5vh;
-    border: 5px solid yellow;
 }
 
 .hero-clients {
@@ -123,12 +122,7 @@ main {
 }
 
 @media (min-width: 769px) {
-    body {
-        background: rgb(255, 186, 186);
-    }
-
     /* HEADER */
-
     nav {
         justify-content: initial;
     }
@@ -172,6 +166,64 @@ main {
     .company-list {
         display: none;
     }
+
+    /* MAIN */
+    main {
+        display: grid;
+        grid-template-areas:
+            "info-cta image"
+            "clients image";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.25fr;
+        column-gap: 10vw;
+        padding: 10%;
+        max-height: 90vh;
+        margin: auto;
+    }
+
+    .hero-image {
+        grid-area: image;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-image img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hero-info-cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .title,
+    .info,
+    .learn-more {
+        margin: 0;
+    }
+
+    .title,
+    .info {
+        text-align: start;
+    }
+
+    .info {
+        padding: 0;
+    }
+
+    .learn-more {
+        margin-right: auto;
+    }
+
+    .hero-clients {
+        margin-top: 0;
+        align-items: flex-end;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
 }
 
 
