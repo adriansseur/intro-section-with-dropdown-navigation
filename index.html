@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./index.css">
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -16,24 +16,72 @@
 </head>
 <body>
 
-  Features
-  Company
-  Careers
-  About
+  <header>
+    <nav>
+      <img class="logo" src="./images/logo.svg" alt="snap logo">
+      <img class="menu-icon" src="./images/icon-menu.svg" alt="menu icon">
+      <div class="menu">
+        <img class="close-icon" src="./images/icon-close-menu.svg" alt="close icon">
+        <div class="quadruple">
+          <button class="features">Features <img class="down-arrow" src="./images/icon-arrow-down.svg" alt="arrow down icon"> <img class="up-arrow" src="./images/icon-arrow-up.svg" alt="arrow down icon"></button>
+          <div class="features-list">
+            <div class="todo">
+              <img src="./images/icon-todo.svg" alt="todo icon">
+              <p>Todo list</p>
+            </div>
+            <div class="calendar">
+              <img src="./images/icon-calendar.svg" alt="calendar icon">
+              <p>Calendar</p>
+            </div>
+            <div class="reminders">
+              <img src="./images/icon-reminders.svg" alt="reminders icon">
+              <p>Reminders</p>
+            </div>
+            <div class="planning">
+              <img src="./images/icon-planning.svg" alt="planning icon">
+              <p>Planning</p>
+            </div>
+          </div>
+          <button class="company">Company <img class="down-arrow" src="./images/icon-arrow-down.svg" alt="arrow down icon"> <img class="up-arrow" src="./images/icon-arrow-up.svg" alt="arrow down icon"></button>
+          <div class="company-list">
+            <p>History</p>
+            <p>Our Team</p>
+            <p>Blog</p>
+          </div>
+          <button>Careers</button>
+          <button>About</button>
+        </div>
+        <div class="double">
+          <button class="login">Login</button>
+          <button class="register">Register</button>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
+  <main>
+    <aside class="hero-image">
+      <img src="./images/image-hero-mobile.png" alt="man working on laptop surrounded by colorful shapes">
+    </aside>
+    <section class="hero-info-cta">
+      <h1 class="title">Make remote work</h1>
+      <p class="info">
+        Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+      </p>
+      <button class="learn-more">Learn more</button>
+    </section>
+    <section class="hero-clients">
+      <img src="./images/client-databiz.svg" alt="databiz is a client">
+      <img src="./images/client-audiophile.svg" alt="audiophile is a client">
+      <img src="./images/client-meet.svg" alt="meet is a client">
+      <img src="./images/client-maker.svg" alt="maker is a client">
+    </section>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Adriansseur</a>.
   </div>
 </body>
 </html>
