@@ -78,12 +78,48 @@ nav button {
 
 main {
     min-height: 90vh;
-    border: 5px solid orange;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+.title {
+    font-size: 44px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--almost-black);
+}
+
+.info {
+    padding: 0 3vh;
+    text-align: center;
+    line-height: 1.85rem;
+    color: var(--medium-gray);
+    letter-spacing: 0.035rem;
+}
+
+.learn-more {
+    margin: auto;
+    display: block;
+    border: none;
+    background: var(--almost-black);
+    color: var(--almost-white);
+    font-weight: 700;
+    padding: 1rem 1.25rem;
+    border-radius: 10px;
 }
 
 .attribution {
     height: 5vh;
     border: 5px solid yellow;
+}
+
+.hero-clients {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 @media (min-width: 769px) {
