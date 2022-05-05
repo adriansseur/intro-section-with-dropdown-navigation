@@ -25,7 +25,6 @@ button {
 
 header {
     height: 10vh;
-    /* border: 5px solid red; */
     padding: 0 3vh;
     display: flex;
 }
@@ -36,7 +35,6 @@ nav {
     align-items: center;
     height: 100%;
     width: calc(100vw - 6vh);
-    /* border: 1px solid blue; */
 }
 
 nav button {
@@ -237,6 +235,8 @@ main {
         flex-direction: row;
         align-items: center;
         margin-top: 0;
+        position: relative;
+        margin-right: auto;
     }
 
     .double {
@@ -264,7 +264,37 @@ main {
 
     .features-list,
     .company-list {
-        display: none;
+        position: absolute;
+        box-shadow:
+        0px 1px 2.2px rgba(0, 0, 0, 0.02),
+        0px 2.5px 5.3px rgba(0, 0, 0, 0.028),
+        0px 4.6px 10px rgba(0, 0, 0, 0.035),
+        0px 8.3px 17.9px rgba(0, 0, 0, 0.042),
+        0px 15.5px 33.4px rgba(0, 0, 0, 0.05),
+        0px 37px 80px rgba(0, 0, 0, 0.07)
+        ;
+        background: white;
+        padding: 1rem;
+        top: 50px;
+    }
+
+    .features-list {
+        left: -100px;
+        width: 200px;
+    }
+
+    .company-list {
+        width: fit-content;
+        left: 130px;
+    }
+
+    .company-list p {
+        margin: 18px;
+        margin-bottom: 34px;
+    }
+
+    .company-list p:nth-child(3) {
+        margin-bottom: 18px;
     }
 
     /* MAIN */
@@ -323,7 +353,4 @@ main {
         gap: 1rem;
         justify-content: space-between;
     }
-
 }
-
-
