@@ -8,6 +8,10 @@ const featuresBtn = document.querySelector(".features-btn")
 const featuresList = document.querySelector(".features-list")
 const companyBtn = document.querySelector(".company-btn")
 const companyList = document.querySelector(".company-list")
+const featuresDownArrow = document.querySelector(".features-down-arrow")
+const featuresUpArrow = document.querySelector(".features-up-arrow")
+const companyDownArrow = document.querySelector(".company-down-arrow")
+const companyUpArrow = document.querySelector(".company-up-arrow")
 
 window.addEventListener("resize", renderUI)
 menuBtn.addEventListener("click", 
@@ -38,4 +42,12 @@ function toggleMenu(menuClass, darkenerClass) {
 
 function toggleMenuList(target, listClass) {
     target.classList.toggle(listClass)
+    if (target === featuresList) {
+        featuresDownArrow.classList.toggle("arrow-hidden")
+        featuresUpArrow.classList.toggle("arrow-shown")
+    }
+    if (target === companyList) {
+        companyDownArrow.classList.toggle("arrow-hidden")
+        companyUpArrow.classList.toggle("arrow-shown")
+    }
 }

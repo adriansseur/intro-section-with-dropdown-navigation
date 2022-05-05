@@ -148,7 +148,16 @@ nav button {
     margin-bottom: 2rem;
 }
 
-.up-arrow {
+.features-up-arrow,
+.company-up-arrow {
+    display: none;
+}
+
+.arrow-shown {
+    display: block;
+}
+
+.arrow-hidden {
     display: none;
 }
 
