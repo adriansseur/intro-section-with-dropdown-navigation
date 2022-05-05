@@ -52,8 +52,29 @@ nav button {
     display: block;
 }
 
-.menu {
+.menu,
+.menu-bg-darkener {
     display: none;
+}
+
+.open-menu {
+    display: block;
+    position: absolute;
+    background: var(--almost-white);
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.darkener-on {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
 }
 
 .features,
@@ -66,6 +87,10 @@ nav button {
 .features img,
 .company img {
     margin-left: 0.5rem;
+}
+
+.up-arrow {
+    display: none;
 }
 
 .register {
@@ -110,10 +135,6 @@ main {
     border-radius: 10px;
 }
 
-.attribution {
-    height: 5vh;
-}
-
 .hero-clients {
     margin-top: 5vh;
     display: flex;
@@ -156,10 +177,6 @@ main {
 
     .double button {
         margin-left: 2rem;
-    }
-
-    .up-arrow {
-        display: none;
     }
 
     .features-list,
