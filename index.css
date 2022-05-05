@@ -168,11 +168,16 @@ main {
     width: 100%;
 }
 
-.title {
+.title,
+.title span {
     font-size: 44px;
     font-weight: 700;
     text-align: center;
     color: var(--almost-black);
+}
+
+.break {
+    display: none;
 }
 
 .info {
@@ -190,7 +195,7 @@ main {
     background: var(--almost-black);
     color: var(--almost-white);
     font-weight: 700;
-    padding: 1rem 1.25rem;
+    padding: 1.25rem 1.75rem;
     border-radius: 10px;
 }
 
@@ -205,6 +210,8 @@ main {
     /* HEADER */
     nav {
         justify-content: initial;
+        margin-right: 1rem;
+        margin-left: 1rem;
     }
 
     .menu-btn {
@@ -212,7 +219,7 @@ main {
     }
 
     .logo-btn {
-        margin-right: 2rem;
+        margin-right: 6vh;
     }
 
     .menu {
@@ -303,23 +310,28 @@ main {
         grid-template-areas:
             "info-cta image"
             "clients image";
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto auto;
         grid-template-rows: 1fr 0.25fr;
         column-gap: 10vw;
-        padding: 10%;
+        padding: 5% 10% 7% 10%;
         max-height: 90vh;
         margin: auto;
     }
 
     .hero-image {
         grid-area: image;
+        margin-right: 10%;
         display: flex;
-        align-items: center;
+        width: 100%;
     }
 
     .hero-image img {
-        height: 100%;
-        object-fit: cover;
+        display: block;
+        margin-left: auto;
+        min-width: 425px;
+        max-width: fit-content;
+        max-height: 100%;
+        object-fit: contain;
     }
 
     .hero-info-cta {
@@ -339,12 +351,29 @@ main {
         text-align: start;
     }
 
+    .title,
+    .title span {
+        font-size: 72px;
+        font-weight: 700;
+    }
+
+    .break {
+        display: initial;
+    }
+
     .info {
         padding: 0;
+        max-width: 450px;
     }
 
     .learn-more {
         margin-right: auto;
+        border: 1px solid var(--almost-black);
+    }
+
+    .learn-more:hover {
+        color: var(--almost-black);
+        background-color: var(--almost-white);
     }
 
     .hero-clients {
@@ -352,5 +381,7 @@ main {
         align-items: flex-end;
         gap: 1rem;
         justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 525px;
     }
 }
