@@ -58,13 +58,16 @@ nav button {
 }
 
 .open-menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     background: var(--almost-white);
     height: 100vh;
     top: 0;
     right: 0;
     z-index: 10;
+    width: 250px;
+    padding: 3vh;
 }
 
 .darkener-on {
@@ -72,21 +75,79 @@ nav button {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     top: 0;
     left: 0;
 }
 
-.features,
-.company {
+.close-btn {
+    align-self: flex-end;
+}
+
+.quadruple {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3vh;
+}
+
+.quadruple button {
+    margin-bottom: 3vh;
+}
+
+.double button {
+    margin-bottom: 3vh;
+}
+
+.double {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.features-list,
+.company-list {
+    display: none;
+    width: 100%;
+    margin-bottom: 3vh;
+    color: var(--medium-gray);
+}
+
+.features-btn,
+.company-btn {
     min-width: fit-content;
     display: flex;
     align-items: center;
 }
 
-.features img,
-.company img {
+.features-btn img,
+.company-btn img {
     margin-left: 0.5rem;
+}
+
+.open-menu-list {
+    display: block;
+}
+
+.todo,
+.calendar,
+.reminders,
+.planning {
+    display: flex;
+    align-items: center;
+}
+
+.todo img,
+.calendar img,
+.reminders img,
+.planning img {
+    margin: 0 1.5rem;
+    transform: scale(1.5);
+}
+
+.company-list p {
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .up-arrow {
@@ -169,6 +230,28 @@ main {
     .quadruple,
     .double {
         display: flex;
+    }
+
+    .quadruple {
+        border: none;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .double {
+        border: none;
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    .quadruple button,
+    .quadruple div {
+        margin: 0;
+    }
+
+    .double button {
+        margin-bottom: 0;
     }
 
     .quadruple button {
