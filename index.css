@@ -97,6 +97,11 @@ nav button {
     margin-bottom: 3vh;
 }
 
+.quadruple button:hover,
+.double button:hover {
+    color: var(--almost-black);
+}
+
 .double {
     margin-top: 3vh;
     display: flex;
@@ -179,7 +184,7 @@ main {
 
 .title,
 .title span {
-    font-size: 44px;
+    font-size: 36px;
     font-weight: 700;
     text-align: center;
     color: var(--almost-black);
@@ -190,11 +195,12 @@ main {
 }
 
 .info {
-    padding: 0 3vh;
+    padding: 0 1vh;
     text-align: center;
     line-height: 1.85rem;
     color: var(--medium-gray);
     letter-spacing: 0.035rem;
+    font-size: 16px;
 }
 
 .learn-more {
